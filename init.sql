@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS mi_app_db;
+USE mi_app_db;
+
+CREATE TABLE usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) UNIQUE,
+  nombre VARCHAR(100),
+  password_hash VARCHAR(255)
+);
+
+CREATE TABLE items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100)
+);
